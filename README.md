@@ -17,7 +17,7 @@ Near to the figure display the perimeter of the figure.
 2. Open the project in VS Code
 3. Open the VS Code terminal and run the command ``dotnet restore``
 4. Go to API folder by ``cd API`` and run the command ``dotnet watch run``
-5. Open another terminal and go to client folder by ``cd client`` and run the command ``ng serve -o``. It will open the application in the browser.
+5. Open another terminal and go to client folder by ``cd client`` and run the command ``npm install`` and then run the command ``ng serve -o``. It will open the application in the browser.
 
 ## Screenshots
 
