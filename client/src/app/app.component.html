@@ -1,3 +1,7 @@
 <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-    <app-svg [width] = "dimension.width" [height] = "dimension.height" (DimensionSelected)="GetSelectedDimention($event)"></app-svg>
+    <app-svg 
+    [width] = "dimension.width" 
+    [height] = "dimension.height" 
+    [perimeter] = "2 * (dimension.width + dimension.height)" 
+    (DimensionSelected)="GetSelectedDimention($event)"></app-svg>
 </div>

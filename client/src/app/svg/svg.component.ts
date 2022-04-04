@@ -7,6 +7,10 @@ import { Dimension } from '../_models/dimentsion';
   styleUrls: ['./svg.component.css']
 })
 export class SvgComponent {
+  
+  calculatePerimeter() {
+    this.perimeter = (2 * (this.width + this.height))
+  }
 
   @Input() width = 0;
   @Input() height = 0;
@@ -14,7 +18,7 @@ export class SvgComponent {
   fillColor = 'rgb(255, 0, 0)';
   isMouseDown: boolean = false;
   dimension: Dimension = new Dimension();
-
+  @Input() perimeter: number = 0;
   mousedown($event: any) {
     this.isMouseDown = true;
   }
@@ -28,6 +32,7 @@ export class SvgComponent {
       }
       this.width += $event.movementX;
       this.height += $event.movementY;
+      this.calculatePerimeter();
     }
 
   }
