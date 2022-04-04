@@ -1,1 +1,4 @@
-# svg-angular-.net5
+# Resiable SVG rectangle in Angular and .Net 6
+
+
+## How to run the project
