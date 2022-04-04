@@ -27,6 +27,6 @@ When first run the application.
 After resize the rectangle
 ![2.PNG](Screenshots/2.PNG)
 
-JSON File location
+JSON File location  
 ![3.PNG](Screenshots/3.PNG)
 
