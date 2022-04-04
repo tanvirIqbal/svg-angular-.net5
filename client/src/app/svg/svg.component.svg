@@ -1,0 +1,6 @@
+<svg height="700" width="700" viewBox="0 0 700 700">
+  <g>
+    <rect   (mousedown)="mousedown($event)" (mousemove)="mousemove($event)" (mouseup)="mouseup($event)" x="30" y="30" [attr.width]="width" [attr.height]="height" [attr.fill]="fillColor" />
+    <text x="120" y="20"> Click and drag mouse to resize the rectangle. (Width: {{width}} Height: {{height}})</text>
+  </g>
+</svg>

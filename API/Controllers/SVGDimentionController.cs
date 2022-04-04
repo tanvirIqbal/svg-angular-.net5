@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace API.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class SVGDimentionController : Controller
     {
         private readonly ILogger<SVGDimentionController> _logger;
@@ -45,7 +45,7 @@ namespace API.Controllers
 
         [Route("SaveDimension")]
         [HttpPost]
-        public ActionResult SaveDimension(Dimension dimension)
+        public ActionResult SaveDimension([FromBody] Dimension dimension)
         {
             string rootPath = _webHostEnvironment.ContentRootPath; //get the root path
 

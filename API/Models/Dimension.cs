@@ -13,10 +13,6 @@ namespace API.Models
         [Required]
         public int Height { get; set; }
 
-        public Dimension()
-        {
-            Width = 0;
-            Height = 0;
-        }
+        
     }
 }
